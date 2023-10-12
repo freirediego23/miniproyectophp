@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.left-column {
+  flex: 1; /* 1/4 of container width */
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  padding-right: 0;
+  border-right: none;
+}
+
+.right-column {
+  flex: 3; /* 3/4 of container width */
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  padding-left: 0;
+  border-left: none;
+}
+
+.row {
+  padding: 5px;
+}
