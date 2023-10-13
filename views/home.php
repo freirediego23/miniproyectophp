@@ -20,6 +20,7 @@ $data = getByID($id);
 
 
 var_dump($data);
+
 extract($data);
 //var_dump($data); // test
 ?>
@@ -40,12 +41,14 @@ extract($data);
 
 
   <h3>Welcome</h3>
-  <p><?= $user["name"] ?></p>
+  <p><?= $name ?></p>
+
 
   <a href="../views/edit.php?id=<?= $id ?>">Editar</a>
-
   <div class="container">
+
     <div class="left-column">
+
       <div class="row">Photo</div>
       <div class="row">Name</div>
       <div class="row">Bio</div>
@@ -54,12 +57,12 @@ extract($data);
       <div class="row">Password</div>
     </div>
     <div class="right-column">
-      <div class="row"><?= $photo ?></div>
+      <div class="row"><img src=../public/<?= $photo ?> alt="profile photo"></div>
       <div class="row"><?= $name ?></div>
       <div class="row"><?= $bio ?></div>
       <div class="row"><?= $phone ?></div>
       <div class="row"><?= $email ?></div>
-      <div class="row"><?= $id ?></div>
+
       <div class="row">*********</div>
     </div>
   </div>
