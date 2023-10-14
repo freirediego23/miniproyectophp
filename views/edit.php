@@ -29,49 +29,54 @@ extract($data);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/style.css">
-  <title>Document</title>
+  <title>Edit <?= $name ?>'s Info</title>
 </head>
 
 <body>
+  <div class="top-banner"><img class="top-left-logo" src="/public/devchallenges.svg" alt="logo">
+    <p><a href="../services/logout.php">Logout</a></p>
+  </div>
 
   <main class="wrapper">
-    <a href="home.php">
+    <a class="back" href="home.php">
       < Back</a>
         <div class="edit-container">
 
           <div>
-            <h4>Change Info</h4>
-            <p>Changes will be reflected to every services</p>
-
-
+            <div class="change-info">
+              <h4>Change Info</h4>
+              <p>Changes will be reflected to every services</p>
+            </div>
 
             <form action=" /services/update.php" enctype="multipart/form-data" method="post">
+
               <div class="row"><img src=../public/<?= $photo ?> alt="profile photo">
                 <label for="fileInput" class="custom-file-upload">
                   CHANGE PHOTOS
                 </label>
                 <input type="file" id="fileInput" name="imagen" hidden>
               </div>
-              <label for="">Name</label>
+
+              <label class="label-text">Name</label>
               <input class="inpname" type=" text" readonly hidden name="id" value=<?= $id ?>><br>
               <input class="inpname" type="text" name="name" value=<?= $name ?>>
               <br>
-              <label for="">Bio</label>
+              <label class="label-text">Bio</label>
               <br>
               <input class="inpname" type="text" name="bio" value=<?= $bio?>>
               <br>
-              <label for="">Phone</label><br>
+              <label class="label-text">Phone</label><br>
               <input class="inpname" type="text" name="phone" value=<?= $phone ?>>
               <br>
-              <label for="">Email</label><br>
+              <label class="label-text">Email</label><br>
               <input class="inpname" type="text" name="mail" value=<?= $email ?>>
               <br>
-              <label for="">Password</label><br>
+              <label class="label-text">Password</label><br>
               <input class="inpname" type="text" name="password" value="<?= $contraseña ?>">
               <br>
 
 
-              <button type="submit">Save</button>
+              <button class="save" type="submit">Save</button>
             </form>
 
 
