@@ -63,3 +63,100 @@ a {
   border-radius: 8px 8px;
   padding-left: 40px;
 }
+
+/* Index Page CSS */
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-main {
+  border: 1px solid #a4a4a5;
+  border-radius: 13px;
+  width: 400px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-form-cont {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.login-form-cont h4 {
+  margin-bottom: 20px;
+}
+
+.dev-logo {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.form-info {
+  font-size: 13px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+/* Inputs in the login form */
+
+.login-form-cont input {
+  border: none;
+  padding: 8px 8px 8px 8px;
+  width: 100%;
+}
+
+.input-cont {
+  display: flex;
+  align-items: center;
+  border: 1px solid #a4a4a5;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.input-cont img {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+
+.index-button {
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: #2e80ec;
+  padding: 5px 2px 5px 2px;
+  text-align: center;
+  width: 100%;
+}
+
+.social-cont {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-cont p {
+  color: #a4a4a5;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.social-prof {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.member {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.member span {
+  color: #a4a4a5;
+}
