@@ -11,10 +11,11 @@ if (!isset($_SESSION["user"])) {
   exit();
 }
 
+
+
+
 $user =  $_SESSION["user"];
-
 $id = $user["id"]; // test
-
 require_once("../model/usuarios.php");
 
 $data = getByID($id);
@@ -69,10 +70,10 @@ extract($data);
               <input class="inpname" type="text" name="phone" value=<?= $phone ?>>
               <br>
               <label class="label-text">Email</label><br>
-              <input class="inpname" type="text" name="mail" value=<?= $email ?>>
+              <input class="inpname" type="text" name="mail" required value=<?= $email ?>>
               <br>
               <label class="label-text">Password</label><br>
-              <input class="inpname" type="text" name="password" value="<?= $contraseña ?>">
+              <input class="inpname" type="text" name="password" required value="<?= $contraseña ?>">
               <br>
 
 

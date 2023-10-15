@@ -1,7 +1,7 @@
 <?php 
 
 if(isset($_GET['warning']) && $_GET['warning'] == 1) {
-  echo '<div class="warning">Warning: This email is already being used!</div>';
+  echo '<div class="warning">Warning: Password does not match!</div>';
 }
 
 ?>
@@ -31,10 +31,11 @@ if(isset($_GET['warning']) && $_GET['warning'] == 1) {
         <br>
 
         <div class="input-cont">
-          <img src="/public/letter.svg" alt="icon">
+          <img src="/public/lock.svg" alt="icon">
           <input type="text" placeholder="Password" name="password">
         </div>
         <br>
+
         <button type="submit" class="index-button">Login</button>
         <div class="social-cont">
           <p>or continue with these social profile</p>

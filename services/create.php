@@ -4,8 +4,16 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
   extract($_POST);
 try {
-  $response = $mysqli->query("INSERT INTO usuarios(email, contraseña) values('$usuario', '$password');");
-  header("Location: ../index.php");
+
+  
+
+  if (isset($usuario, $password) && $usuario !== "" && $password !== "") {
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+    $response = $mysqli->query("INSERT INTO usuarios(email, contraseña) values('$usuario', '$hash');");
+    header("Location: ../index.php");
+  }
+
+  
 
 } catch (mysqli_sql_exception $e) {
   
